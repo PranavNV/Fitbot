@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Workout1</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/TMForm.js"></script>
+		<script>
+		  $(document).ready(function(){
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+		<style>
+		h1{
+		position: absolute;
+		top: 55px;
+		left: 575px;
+		font-size: 65px;
+		align: center;
+		}
+		.color1{
+		font-size:40px;
+		}
+		
+		.dur{
+		font-size:30px;
+		}
+		
+		html {
+  height: 100%;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#content {
+  background-color: #e3f2fd;
+  flex: 1;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #f3e5f5;
+  padding: 20px;
+}
+
+
+
+
+
+		html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#content {
+  background-color: #e3f2fd;
+  flex: 1;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #f3e5f5;
+  padding: 20px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: 5px;
+    height: 10px;
+   
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.desc1{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.mountainclimbers:hover .desc1 {
+  display: block;
+} 
+
+.desc2{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.crosskicks:hover .desc2 {
+  display: block;
+} 
+
+.desc3{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.pushuphold:hover .desc3 {
+  display: block;
+} 
+
+.desc4{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.widesquat:hover .desc4 {
+  display: block;
+} 
+
+.desc5{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.reachthroughandaround:hover .desc5 {
+  display: block;
+} 
+
+.desc6{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.sideplankwithahipdrop:hover .desc6 {
+  display: block;
+} 
+
+.desc7{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%;
+color: #000000;  
+}
+
+
+
+.shoulderpress:hover .desc7 {
+  display: block;
+} 
+
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+		</style>
+	</head>
+	<body class="page1" id="top">
+		<div class="main">
+	<br><h1>Sweatwell</h1><br><br><br><br>
+
+	<!--==============================header=================================-->
+		<header>
+				<div class="container_12">
+					<div class="grid_12">
+						
+					
+						<div class="menu_block">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<li><a href="index.html">Home</a></li>
+									<li ><a href="index-1.html">Login</a></li>
+									<li><a href="index-2.html">Profile</a></li>
+									<li><a href="index-3.html">Feed</a></li>
+									<li><a href="index-4.html">Contact us</a></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+			  </div> 
+			</header>
+
+
+<!--==============================Content=================================-->
+<center>		
+<br><h3>Stay Fit</h3><br><br>
+<img src="images/stayfit.jpg" height="535" width="1500" alt="" class="img_inner fcenter"><br><br>
+		<img src="images/mountainclimbers.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="mountainclimbers">
+							<br/><p class="color1"><a href="#">Mountain Climbers</a></p><br/>
+							<p class="dur">Duration : 60s</p>
+							<p class="desc1" >Begin in a pushup position, with your weight supported by your hands and toes. 
+		Flexing the knee and hip, bring one leg until the knee is approximately under the hip. This will be your starting position.
+		Explosively reverse the positions of your legs, extending the bent leg until the leg is straight and supported by the toe, and bringing the other foot up with the hip and knee flexed.</p>
+						</div><br/>
+						<img src="images/crosskicks.png" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="crosskicks">
+							<br/><p class="color1"><a href="#">Cross Kicks</a></p><br/>
+							<p class="dur">Duration : 60s (30s x 2)</p>
+							<p class="desc2">To begin, lie down with your back pressed against the floor or on an exercise mat (optional). Your arms should be fully extended to the sides with your palms facing down. 
+		Note: The arms should be stationary the entire time.
+		With a slight bend at the knees, lift your legs up so that your heels are about 6 inches off the ground. This is the starting position.
+		Now lift your left leg up to about a 45 degree angle while your right leg is lowered until the heel is about 2-3 inches from the ground.
+		Switch movements by raising your right leg up and lowering your left leg. Remember to breathe while performing this exercise.</p>
+						</div><br/>
+						<img src="images/pushuphold.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="pushuphold">
+							<br/><p class="color1"><a href="#">Pushup Hold</a></p><br/>
+							<p class="dur">Duration : 30s</p>
+							<p class="desc3">Position yourself in a plank position, supporting your body with your toes and place your hands underneath your shoulders with elbows extended. 
+		Keep your abs engage and prevent letting your hips sag.
+		Lower your chest to the floor and hold for 30 seconds.
+		Straighten up to starting position.</p>
+						</div><br/>
+						<img src="images/widesquat.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="widesquat">
+							<br/><p class="color1"><a href="#">Wide Squat</a></p><br/>
+							<p class="dur">Duration : 30s</p>
+							<p class="desc4">Begin by loading the bar appropriately and stepping under it, placing it across the back of the shoulders slightly below the rear deltoids.
+		Squeeze your shoulder blades together and rotate your elbows forward, attempting to bend the bar across your shoulders.
+		Remove the bar from the rack, creating a tight arch in your lower back, and step back into position. 
+		Place your feet in a wider-than-shoulder-width stance with the toes slightly pointed out and knees slightly bent. Keep your neck neutral. This will be your starting position.
+		Descend into a squat by pushing your hips and butt backwards. Continue down until the upper legs are at or just below parallel to the floor. Inhale as you perform this portion of the movement.
+		Drive up through your heels, pushing your feet and knees out. Continue upward, maintaining tightness head to toe, until you have returned to the starting position.</p>
+						</div><br/>
+						<img src="images/reachthroughandaround.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="reachthroughandaround">
+							<br/><p class="color1"><a href="#">Reach through and around</a></p><br/>
+							<p class="dur">Duration : 30s</p>
+							<p class="desc5">Get in side plank position, resting on your right forearm (elbow under shoulder) and the outside of your right foot (stack your feet or scissor them on the floor). 
+		Lift your hips and press your arm into the floor so your body is straight and not sinking down. Extend your left arm up.
+		Keeping your body raised, reach your left arm under you. Hold for one count; 
+		Return to the starting position.Switch sides.</p>
+						</div><br/>
+						<img src="images/sideplankwithahipdrop.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="sideplankwithahipdrop">
+							<br/><p class="color1"><a href="#">Side Plank with a hip drop</a></p><br/>
+							<p class="dur">Duration : 60s (30s x 2)</p>
+							<p class="desc6">
+		Start by lying on your right side with your legs straight and your left leg stacked directly on top of your right.  
+		Bend your right elbow and place is directly under your shoulder. Align your head with your spine and keep your hips and right knee in contact with the floor.
+		Exhale as you slowly lift your hips and knees off the floor, keeping your abdominals engaged to brace your spine.  
+		The side of your right foot should stay on the floor. Keep your head aligned with your spine and your right elbow positioned directly under your shoulder.
+		Continue to breathe, keeping your abdominals strong while dropping your hips a few inches (several centimetres), holding for one deep breath, in and out, then pressing back up again.
+		After the desired number of repetitions, gently return to your starting position and repeat on the other side.</p>
+						</div><br/>
+						<img src="images/shoulderpress.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="shoulderpress">
+							<br/><p class="color1"><a href="#">Shoulder Press</a></p><br/>
+							<p class="dur">Reps : 15</p>
+							<p class="desc7">
+		While holding a dumbbell in each hand, sit on a military press bench or utility bench that has back support. Place the dumbbells upright on top of your thighs.
+		Now raise the dumbbells to shoulder height one at a time using your thighs to help propel them up into position.
+		Make sure to rotate your wrists so that the palms of your hands are facing forward. This is your starting position.
+		Now, exhale and push the dumbbells upward until they touch at the top.
+		Then, after a brief pause at the top contracted position, slowly lower the weights back down to the starting position while inhaling.</p>
+						</div><br/>
+</center>
+		
+		</div>
+		<!--==============================footer=================================-->
+	<div id="content" style="background-color:#ffffff">
+  
+  </div>
+<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_logo">
+						<a href="index.html">Sweatwell</a>
+					</div>
+					<div class="f_contacts">
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> MAIL@DEMOLINK.ORG</a>
+						<div class="f_phone"><span class="fa fa-phone"></span>+1 800 559 6580</div>
+					</div>
+					<div class="copy">
+						<span>Sweatwell &copy; 2014 | <a href="#">Privacy Policy</a></span>
+						
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/cd_config.js"></script>
+		<script src="js/modernizr.custom.69142.js"></script>
+		<script type="text/javascript">
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+					if( url === 'js/jquery.hoverfold.js' ) {
+						$( '#grid' ).hoverfold();
+					}
+				}
+			});
+		</script>
+		</body>
+		</html>
+
+
+
+
+

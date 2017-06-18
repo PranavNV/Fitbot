@@ -206,9 +206,7 @@ body {
 					<div class="grid_12">
 						
 						<h1>
-							<a href="index.html">
-								<img src="images/logo.png" alt="Your Happy Family">
-							</a>
+							
 						</h1>
 						<div class="menu_block">
 							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
@@ -216,7 +214,7 @@ body {
 									<li><a href="index.html">Home</a></li>
 									<li class="current"><a href="index-1.html">Login</a></li>
 									<li><a href="index-2.html">Profile</a></li>
-									<li><a href="index-3.html">Workout</a></li>
+									<li><a href="index-3.html">Feed</a></li>
 									<li><a href="index-4.html">Contact us</a></li>
 								</ul>
 							</nav>
@@ -241,7 +239,7 @@ body {
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" >
         
-      <button type="submit">Login</button>
+      <button type="submit" onclick="fun1()">Login</button>
       
     </div>
 
@@ -265,6 +263,87 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+function fun1()
+{
+</script>
+            <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+                        <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDBcRDg-j6vzqurddOffPehHuMG1oGzOAU",
+    authDomain: "fitness223-4e7e6.firebaseapp.com",
+    databaseURL: "https://fitness223-4e7e6.firebaseio.com",
+    projectId: "fitness223-4e7e6",
+    storageBucket: "",
+    messagingSenderId: "804818549824"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript">
+
+function show_alert()
+
+{
+
+
+                                                alert("yayy");
+                                                var flag_t=0,flag_u=0;
+                                                if(flag_t==0){
+                                                var dbref=new Firebase("https://fitness223-4e7e6.firebaseio.com/trainers");
+                                                var contactsref=dbref.child('contacts');
+                                                contactsref.on("value", function(snap) {
+                                                            snap.forEach(function(childSnapshot) {
+                                                            var key = childSnapshot.key();
+                                                var childData = childSnapshot.val();
+                                                if(childData.email=='klnd')
+                                                {
+                                                            if(childData.password=='dfad')
+                                                            {
+                                                                        flag_t=1;
+                                                                        alert("yes");
+                                                                        return;
+                                                                        console.log("you are logged in");
+                                                                        //write code for trainer log-in
+                                                            }
+                                                }
+                                                                                                                        
+                                    });
+                                    });
+                                    }
+                                                if(flag_t==0)
+                                                {
+                                                            var dbref=new Firebase("https://fitness223-4e7e6.firebaseio.com/users");
+                                                            var contactsref=dbref.child('contacts');
+                                                            contactsref.on("value", function(snap) {
+                                                                        snap.forEach(function(childSnapshot) {
+                                                                                    var key = childSnapshot.key();
+                                                                                    var childData = childSnapshot.val();
+                                                                                    if(childData.email=="klnd")
+                                                                                    {
+                                                                                                if(childData.password=="dfad")
+                                                                                                {
+                                                                                                            flag_u=1;
+                                                                                                            alert("you are logged in");
+                                                                                                            //write code for user log-in
+                                                                                                }
+                                                                                    }
+                                                                                                              });
+                                                                        });
+                                                }                      
+                                                else if(flag_t==0 && flag_u==0)
+                                                {
+                                                            alert("Please register yourself");
+                                                }
+                                                                                                                        
+}
+
+
+
+}
+
+
 </script>
 </div>
 <!--==============================footer=================================-->
@@ -278,12 +357,12 @@ window.onclick = function(event) {
 						<a href="index.html">Sweatwell</a>
 					</div>
 					<div class="f_contacts">
-						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> MAIL@DEMOLINK.ORG</a>
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> mail@sweatwell.com</a>
 						<div class="f_phone"><span class="fa fa-phone"></span>+1 800 559 6580</div>
 					</div>
 					<div class="copy">
 						<span>Sweatwell &copy; 2014 | <a href="#">Privacy Policy</a></span>
-						Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+						
 					</div>
 				</div>
 				<div class="clear"></div>

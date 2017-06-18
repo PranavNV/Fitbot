@@ -75,6 +75,11 @@ left:550px;
     cursor: pointer;
 }
 
+.panel-body
+{
+left:500px;
+}
+
 .table-user-information > tbody > tr {
     border-top: 1px solid rgb(221, 221, 221);
 }
@@ -95,7 +100,38 @@ left:550px;
 {
 left:550px;
 }
+html {
+  height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#content {
+  background-color: #e3f2fd;
+  flex: 1;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #f3e5f5;
+  padding: 20px;
+}
+.button {
+    background-color: #66CDAA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    width:200px;
+    height:20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
 </style>
 	</head>
 	<body class="" id="top">
@@ -116,7 +152,7 @@ left:550px;
 									<li><a href="index.html">Home</a></li>
 									<li><a href="index-1.html">Login</a></li>
 									<li class="current"><a href="index-2.html">Profile</a></li>
-									<li><a href="index-3.html">Workout</a></li>
+									<li><a href="index-3.html">Feed</a></li>
 									<li><a href="index-4.html">Contact us</a></li>
 								</ul>
 							</nav>
@@ -129,17 +165,17 @@ left:550px;
            <span calss="psw">
 		   
 
-        <A href="index.html" style="text-align:right">Logout</A>
+       
        </span>
 	   <br>
 
       </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
    
-   
+   <center>
           <div class="panel panel-info">
             <div class="panel-heading">
-              <h3 class="panel-title">Sheena Shrestha</h3>
+            
             </div>
             <div class="panel-body">
               <div class="row">
@@ -157,53 +193,19 @@ left:550px;
                     <dd>Male</dd>
                   </dl>
                 </div>-->
-                <div class=" col-md-9 col-lg-9 "> 
-                  <table class="table table-user-information">
-                    <center>
-                    <tbody>
-                      <tr>
-                        <td>Department:</td>
-                        <td>Programming</td>
-                      </tr>
-                      <tr>
-                        <td>Hire date:</td>
-                        <td>06/23/2013</td>
-                      </tr>
-                      <tr>
-                        <td>Date of Birth</td>
-                        <td>01/24/1988</td>
-                      </tr>
-                   
-                         <tr>
-                             <tr>
-                        <td>Gender</td>
-                        <td>Female</td>
-                      </tr>
-                        <tr>
-                        <td>Home Address</td>
-                        <td>Kathmandu,Nepal</td>
-                      </tr>
-                      <tr>
-                        <td>Email</td>
-                        <td><a href="mailto:info@support.com">info@support.com</a></td>
-                      </tr>
-                        <td>Phone Number</td>
-                        <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
-                        </td>
-                           
-                      </tr>
-                     
-                    </tbody>
-                  </table>
-                  </center>         
-                  <a href="index-7.html" class="btn btn-primary">Recommended</a>
-                  <a href="#" class="btn btn-primary">Create one for yourself!</a>
+                <h3>Fitness Plans</h3>
+                  <BR>
+                  <BR>      
+
+                  <a href="index-15.html" class="button">Recommended</a><BR><br>
+                  <a href="MuscleBuild.html" class="button">Create one for yourself!</a>
+<br><br><br><br><br>
                 </div>
               </div>
             </div>
                  
             
-          </div>
+          </div></center>
         </div>
       </div>
 				</div>
@@ -233,19 +235,23 @@ left:550px;
 
 		</div>
 <!--==============================footer=================================-->
-		<footer>
+<div id="content" style="background-color:#ffffff">
+  
+  </div>
+			
+<footer>
 			<div class="container_12">
 				<div class="grid_12">
 					<div class="f_logo">
 						<a href="index.html">Sweatwell</a>
 					</div>
 					<div class="f_contacts">
-						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> MAIL@DEMOLINK.ORG</a>
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> mail@sweatwell.com</a>
 						<div class="f_phone"><span class="fa fa-phone"></span>+1 800 559 6580</div>
 					</div>
 					<div class="copy">
 						<span>Sweatwell &copy; 2014 | <a href="#">Privacy Policy</a> </span>
-						Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+						
 					</div>
 				</div>
 				<div class="clear"></div>

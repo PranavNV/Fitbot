@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Workout</title>
+		<meta charset="utf-8">
+		<meta name = "format-detection" content = "telephone=no" />
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.2.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.mobilemenu.js"></script>
+		<script src="js/TMForm.js"></script>
+		<script>
+		  $(document).ready(function(){
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+		<style>
+		h1{
+		position: absolute;
+		top: 55px;
+		left: 575px;
+		font-size: 65px;
+		align: center;
+		}
+		.color1{
+		font-size:40px;
+		}
+		
+		.dur{
+		font-size:30px;
+		}
+		
+		html {
+  height: 100%;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#content {
+  background-color: #e3f2fd;
+  flex: 1;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #f3e5f5;
+  padding: 20px;
+}
+
+
+
+
+
+		html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#content {
+  background-color: #e3f2fd;
+  flex: 1;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #f3e5f5;
+  padding: 20px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: 5px;
+    height: 10px;
+   
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+.desc1{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.superman:hover .desc1 {
+  display: block;
+} 
+
+.desc2{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.legdrops:hover .desc2 {
+  display: block;
+} 
+
+.desc3{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.reversecrunches:hover .desc3 {
+  display: block;
+} 
+
+.desc4{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.vcrunches:hover .desc4 {
+  display: block;
+} 
+
+.desc5{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.singlelegcircles:hover .desc5 {
+  display: block;
+} 
+
+.desc6{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%; 
+  color: #000000;
+}
+
+
+
+.doublelegraises:hover .desc6 {
+  display: block;
+} 
+
+.desc7{
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  top: -5px;
+  left: 105%;
+color: #000000;  
+}
+
+
+
+.starfishcrunches:hover .desc7 {
+  display: block;
+} 
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+		</style>
+	</head>
+	<body class="page1" id="top">
+		<div class="main">
+	<br><h1>Sweatwell</h1><br><br><br><br>
+
+	<!--==============================header=================================-->
+		<header>
+				<div class="container_12">
+					<div class="grid_12">
+						
+					
+						<div class="menu_block">
+							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
+								<ul class="sf-menu">
+									<li><a href="index.html">Home</a></li>
+									<li ><a href="index-1.html">Login</a></li>
+									<li><a href="index-2.html">Profile</a></li>
+									<li><a href="index-3.html">Feed</a></li>
+									<li><a href="index-4.html">Contact us</a></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+			  </div> 
+			</header>
+
+
+<!--==============================Content=================================-->
+<center>		
+<br><h3>Weight Loss</h3><br><br>
+		<img src="images/weightloss.jpg" height="400" width="1400" alt="" class="img_inner fcenter"><br><br>
+		 <img src="images/superman.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="superman">
+							<br/><p class="color1"><a href="#">Superman</a></p><br/>
+							<p class="dur">Duration : 30s</p>
+							<p class="desc1" >To begin, lie straight and face down on the floor or exercise mat. Your arms should be fully extended in front of you. This is the starting position.
+							Simultaneously raise your arms, legs, and chest off of the floor and hold this contraction for 2 seconds. Tip: Squeeze your lower back to get the best results from this exercise. Remember to exhale during this movement. Note: When holding the contracted position, you should look like superman when he is flying.
+							Slowly begin to lower your arms, legs and chest back down to the starting position while inhaling.</p>
+						</div><br/>
+						<img src="images/legdrops.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="legdrops">
+							<br/><p class="color1"><a href="#">Leg Drops</a></p><br/>
+							<p class="dur">Duration : 60s</p>
+							<p class="desc2">Raise both legs toward the ceiling. 
+											 Breathe in and tighten your abs.
+											 Exhale and slowly lower your legs until they’re about four inches above the floor (or as low as you can go without lifting the small of your back). 
+											 Pause and breathe in. Breathe out as you raise your legs to the starting position.</p>
+						</div><br/>
+						<img src="images/reversecrunches.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="reversecrunches">
+							<br/><p class="color1"><a href="#">Reverse Crunches</a></p><br/>
+							<p class="dur">Duration : 60s</p>
+							<p class="desc3">Lie down on the floor with your legs fully extended and arms to the side of your torso with the palms on the floor. 
+		Your arms should be stationary for the entire exercise.
+		Move your legs up so that your thighs are perpendicular to the floor and feet are together and parallel to the floor. This is the starting position.
+		While inhaling, move your legs towards the torso as you roll your pelvis backwards and you raise your hips off the floor. At the end of this movement your knees will be touching your chest.
+		Hold the contraction for a second and move your legs back to the starting position while exhaling.</p>
+						</div><br/>
+						<img src="images/vcrunches.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="vcrunches">
+							<br/><p class="color1"><a href="#">V-Crunches</a></p><br/>
+							<p class="dur">Duration : 60s</p>
+							<p class="desc4">	Lie on your back, and lift your legs and arms up so they are extended toward the ceiling. 
+		Lift your upper back off the floor, reaching your hands toward your feet.
+		Lower your legs toward the floor while reaching your arms overhead, keeping your shoulders off the mat and lower back pressed into the mat.</p>
+						</div><br/>
+						<img src="images/singlelegcircles.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="singlelegcircles">
+							<br/><p class="color1"><a href="#">Single Leg Circles</a></p><br/>
+							<p class="dur">Duration : 60s (15s x 4)</p>
+							<p class="desc5">Lay down with your back flat on the floor and your arms on your side.
+		Place the small ball under your right foot.
+		Point your left leg straight up to the ceiling. Rotate your leg in small circles clockwise and then counter clockwise.
+		Lower your left leg down onto the ball and then repeat the motion with your right leg for the desired amount of time.</p>
+						</div><br/>
+						<img src="images/doublelegraises.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="doublelegraises">
+							<br/><p class="color1"><a href="#">Double Leg Raises</a></p><br/>
+							<p class="dur">Duration : 60s</p>
+							<p class="desc6">
+		Lie faceup on the floor with your legs straight and your palms facing down. This is the starting position.
+		Without bending your legs, lift them toward the ceiling until your hips just leave the floor. 
+		Then lower your legs down to the starting position again.</p>
+						</div><br/>
+						<img src="images/starfishcrunches.jpg" height="100" width="100" alt="" class="img_inner fcenter">
+						<div class="starfishcrunches">
+							<br/><p class="color1"><a href="#">Starfish Crunches</a></p><br/>
+							<p class="dur">Duration : 60s</p>
+							<p class="desc7">
+		Lay flat on your back. Extend your arms over your head and spread your legs out so that your body forms an "X" on the ground. This is your starting position.
+		Simultaneously lift one arm and the opposing leg, reaching across and touching your fingers to your ankle. Exhale during the crunch. 
+		Keep the arm and leg not being used on the ground.
+		Inhale and slowly lower back to staring position. Repeat the motion using the opposite arm and leg.</p>
+						</div><br/>
+</center>
+		
+		</div>
+		<!--==============================footer=================================-->
+	<div id="content" style="background-color:#ffffff">
+  
+  </div>
+<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="f_logo">
+						<a href="index.html">Sweatwell</a>
+					</div>
+					<div class="f_contacts">
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> mail@sweatwell.com</a>
+						<div class="f_phone"><span class="fa fa-phone"></span>+1 800 559 6580</div>
+					</div>
+					<div class="copy">
+						<span>Sweatwell &copy; 2014 | <a href="#">Privacy Policy</a></span>
+						
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+		<script src="js/jquery.countdown.js"></script>
+		<script src="js/cd_config.js"></script>
+		<script src="js/modernizr.custom.69142.js"></script>
+		<script type="text/javascript">
+			Modernizr.load({
+				test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+				yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+				nope: 'css/fallback.css',
+				callback : function( url, result, key ) {
+					if( url === 'js/jquery.hoverfold.js' ) {
+						$( '#grid' ).hoverfold();
+					}
+				}
+			});
+		</script>
+		</body>
+		</html>
+
+
+
+
+

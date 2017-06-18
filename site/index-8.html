@@ -114,15 +114,6 @@ button {
 .container {
     padding: 16px;
 }
-.buttonbmi{
-background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 15%;
-}
 
 .button {
     background-color: #4CAF50;
@@ -187,73 +178,46 @@ span.psw {
      
     
 
-<form action="/action_page.php" style="border:1px solid #ccc">
-  <div class="container">
-    <label><b>Name</b></label>
-    <input type="text" placeholder="Enter Your Name" name="name" required>
-
-    <label><b>First Name</b></label>
-    <input type="text" placeholder="Enter first name" name="firstname" required>
-
-    <label><b>Last Name</b></label>
-    <input type="password" placeholder="Enter Last Name" name="lastname" required>
-
-   <label><b>Gender:</b></label><br>
-  <input type="radio" name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-
-<label><b>Age:</b></label><br>
+<form action="">
+  Name:<br><br>
+  <input type="text" name="name"><br><br>
+  First name:<br><br>
+  <input type="text" name="firstname"><br><br>
+  Last Name :<br><br>
+  <input type="text" name="lastname"><br><br>
+  Gender:<br><br>
+  <input type="radio" name="gender" value="male" checked> Male<br><br>
+  <input type="radio" name="gender" value="female"> Female<br><br>
+  Age:<br><br>
   <input type="number" name="age" min="15" max="100"><br><br>
-
-<label><b>Password:</b></label><br>
-  <input type="password" name="password"><br>
-
-<label><b>City:</b></label><br>
-<input type="text" name="city"><br>
-
-<label><b>Email:</b></label><br>
-  <input type="email" name="email"><br>
-
-  <label><b>Height:</b></label><br>
-  <input type="number" name="height" id="height"><br>
-
-<label><b>Weight:</b></label><br>
-  <input type="number" name="weight" id="weight"><br>
-  <button class="buttonbmi" onclick="mybmi()">Calculate BMI</button><br>
-  <b>BMI: <p id="bmi"></p></b>
-	<b><p id="res"></p></b>
+  Password:<br><br>
+  <input type="password" name="password"><br><br>
+  City:<br><br>
+  <input type="text" name="city"><br><br>
+  Email:<br><br>
+  <input type="email" name="email"><br><br>
+  Rate your field of expertise<br><br>
+  Weight Loss:<br><br>
+  <input type="number" name="loss"  min="1" max="100"><br><br>
   
+  Muscle Building:<br><br>
+  <input type="number" name="muscle" min="1" max="100"><br><br>
   
-  <script>
-  function mybmi()
-  {
-  var h = document.getElementById("height").value;
-  var w = document.getElementById("weight").value;
-  var cal= h/100;
-	var res = w/(cal*cal);
-	var dec="";
-	if(res>25)
-		dec="Overweight";
-	else if(res<19)
-		dec="Underweight";
-	else
-		dec="Normal";
-	var spc="     ";
-	document.getElementById("bmi").innerHTML = res+spc;
-	document.getElementById("res").innerHTML = dec;
-	}
-</script>
+  Yoga:<br><br>
+  <input type="number" name="yoga" min="1" max="100"><br><br>
+  
+  Cardio:<br><br>
+  <input type="number" name="cardio" min="1" max="100"><br><br>
+  
+  Years of Experience :<br><br>
+  <input type="number" name="exp"><br><br>
 
-<label><b>Plan Preference:</b></label><br>
-  <select name="plans">
-  <option value="choose">Choose one</option>
-  <option value="loss">Weight Loss</option>
-  <option value="muscle">Muscle Build</option>
-  <option value="fitness">Maintain Fitness</option>
-  </select><br><br><br>
+  <input type="submit" value="Register">
+  
+</form>
 
 
-<input type="submit" value="Register">
+
     
 
     

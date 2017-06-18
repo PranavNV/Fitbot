@@ -114,15 +114,6 @@ button {
 .container {
     padding: 16px;
 }
-.buttonbmi{
-background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 15%;
-}
 
 .button {
     background-color: #4CAF50;
@@ -215,39 +206,15 @@ span.psw {
   <input type="email" name="email"><br>
 
   <label><b>Height:</b></label><br>
-  <input type="number" name="height" id="height"><br>
+  <input type="text" name="height"><br>
 
 <label><b>Weight:</b></label><br>
-  <input type="number" name="weight" id="weight"><br>
-  <button class="buttonbmi" onclick="mybmi()">Calculate BMI</button><br>
-  <b>BMI: <p id="bmi"></p></b>
-	<b><p id="res"></p></b>
-  
-  
-  <script>
-  function mybmi()
-  {
-  var h = document.getElementById("height").value;
-  var w = document.getElementById("weight").value;
-  var cal= h/100;
-	var res = w/(cal*cal);
-	var dec="";
-	if(res>25)
-		dec="Overweight";
-	else if(res<19)
-		dec="Underweight";
-	else
-		dec="Normal";
-	var spc="     ";
-	document.getElementById("bmi").innerHTML = res+spc;
-	document.getElementById("res").innerHTML = dec;
-	}
-</script>
+  <input type="text" name="weight"><br>
 
 <label><b>Plan Preference:</b></label><br>
   <select name="plans">
   <option value="choose">Choose one</option>
-  <option value="loss">Weight Loss</option>
+  <option value="loss">Weingt Loss</option>
   <option value="muscle">Muscle Build</option>
   <option value="fitness">Maintain Fitness</option>
   </select><br><br><br>

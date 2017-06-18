@@ -52,12 +52,11 @@
 		h1{
 		position: absolute;
 		top: 55px;
-		left: 555px;
+		left: 575px;
 		font-size: 65px;
 		align: center;
 		}
-		
-		html {
+html {
   height: 100%;
 }
 
@@ -77,75 +76,22 @@ body {
   background-color: #f3e5f5;
   padding: 20px;
 }
-input[type=text], input[type=password] {
+
+table {
+    font-family: verdana, sans-serif;
+    border-collapse: collapse;
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    color:#000000
 }
 
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+td, th {
+    border: 1px solid 	#66CDAA;
+    text-align: left;
+    padding: 12px;
 }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: 5px;
-    height: 10px;
-   
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {
-    float: left;
-    width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-.buttonbmi{
-background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 15%;
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-span.psw {
-    float: left;
-    padding-top: 2px;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
+tr:nth-child(even) {
+    background-color: 	#66CDAA;
 }
 		</style>
 	</head>
@@ -154,8 +100,8 @@ span.psw {
 		<div class="main">
 	<h1>
 	<center>Sweatwell</center></h1>
-	<!--==============================header=================================-->
-		<header>
+<!--==============================header=================================-->
+			<header>
 				<div class="container_12">
 					<div class="grid_12">
 						
@@ -165,8 +111,8 @@ span.psw {
 						<div class="menu_block">
 							<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 								<ul class="sf-menu">
-									<li><a href="index.html">Home</a></li>
-									<li class="current"><a href="index-1.html">Login</a></li>
+									<li class="current"><a href="index.html">Home</a></li>
+									<li><a href="index-1.html">Login</a></li>
 									<li><a href="index-2.html">Profile</a></li>
 									<li><a href="index-3.html">Feed</a></li>
 									<li><a href="index-4.html">Contact us</a></li>
@@ -176,104 +122,94 @@ span.psw {
 						</div>
 					</div>
 					<div class="clear"></div>
-			  </div> 
+				</div>
 			</header>
 
+<br>
+<br>
 
-<html>
-<body>
-<h3>Signup Form</h3>
+<table>
+  <tr>
+    <th>Rank</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Points</th>
+  </tr>
 
-     
-    
+  <tr>
+    <td>1</td>
+    <td>Vivek</td>
+    <td>Hulimavu Gate</td>
+    <td>57.0</td>
+  </tr>
 
-<form action="/action_page.php" style="border:1px solid #ccc">
-  <div class="container">
-    <label><b>Name</b></label>
-    <input type="text" placeholder="Enter Your Name" name="name" required>
+  <tr>
+    <td>2</td>
+    <td>Arun Kumar</td>
+    <td>Billekahalli</td>
+    <td>53.5</td>
+  </tr>
 
-    <label><b>First Name</b></label>
-    <input type="text" placeholder="Enter first name" name="firstname" required>
+  <tr>
+    <td>3</td>
+    <td>Sunil</td>
+    <td>J.P.Nagar</td>
+    <td>50.6</td>
+  </tr>
 
-    <label><b>Last Name</b></label>
-    <input type="password" placeholder="Enter Last Name" name="lastname" required>
+  <tr>
+    <td>4</td>
+    <td>Karthick</td>
+    <td>M.G.Road</td>
+    <td>47</td>
+  </tr>
 
-   <label><b>Gender:</b></label><br>
-  <input type="radio" name="gender" value="male" checked> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
+  <tr>
+    <td>5</td>
+    <td>Priya</td>
+    <td>Electronics-city</td>
+    <td>45.8</td>
+  </tr>
 
-<label><b>Age:</b></label><br>
-  <input type="number" name="age" min="15" max="100"><br><br>
+  <tr>
+    <td>6</td>
+    <td>Rajesh</td>
+    <td>White Field</td>
+    <td>43</td>
+  </tr>
+<tr>
+    <td>7</td>
+    <td>Dinesh</td>
+    <td>Brigade Road</td>
+    <td>41.7</td>
+  </tr>
 
-<label><b>Password:</b></label><br>
-  <input type="password" name="password"><br>
+<tr>
+    <td>8</td>
+    <td>Rubini</td>
+    <td>Bellandur</td>
+    <td>39.6</td>
+  </tr>
+<tr>
+    <td>9</td>
+    <td>Anjali</td>
+    <td>Bomanahalli</td>
+    <td>36</td>
+  </tr>
+<tr>
+    <td>10</td>
+    <td>Nivetha</td>
+    <td>Koramangala</td>
+    <td>34</td>
+  </tr>
+</table>
 
-<label><b>City:</b></label><br>
-<input type="text" name="city"><br>
-
-<label><b>Email:</b></label><br>
-  <input type="email" name="email"><br>
-
-  <label><b>Height:</b></label><br>
-  <input type="number" name="height" id="height"><br>
-
-<label><b>Weight:</b></label><br>
-  <input type="number" name="weight" id="weight"><br>
-  <button class="buttonbmi" onclick="mybmi()">Calculate BMI</button><br>
-  <b>BMI: <p id="bmi"></p></b>
-	<b><p id="res"></p></b>
-  
-  
-  <script>
-  function mybmi()
-  {
-  var h = document.getElementById("height").value;
-  var w = document.getElementById("weight").value;
-  var cal= h/100;
-	var res = w/(cal*cal);
-	var dec="";
-	if(res>25)
-		dec="Overweight";
-	else if(res<19)
-		dec="Underweight";
-	else
-		dec="Normal";
-	var spc="     ";
-	document.getElementById("bmi").innerHTML = res+spc;
-	document.getElementById("res").innerHTML = dec;
-	}
-</script>
-
-<label><b>Plan Preference:</b></label><br>
-  <select name="plans">
-  <option value="choose">Choose one</option>
-  <option value="loss">Weight Loss</option>
-  <option value="muscle">Muscle Build</option>
-  <option value="fitness">Maintain Fitness</option>
-  </select><br><br><br>
-
-
-<input type="submit" value="Register">
-    
-
-    
-    
-  </div>
-</form>
-</body>
-</html>
-
-
-
-
-  
-  
+</div>
+<!--==============================footer=================================-->
+<div id="content" style="background-color:#ffffff">
   
   </div>
-		<!--==============================footer=================================-->
-		<div id="content" style="background-color:#ffffff">
-  
-  </div>
+	
 <footer>
 			<div class="container_12">
 				<div class="grid_12">
@@ -308,4 +244,4 @@ span.psw {
 			});
 		</script>
 	</body>
-	</html>
+</html>

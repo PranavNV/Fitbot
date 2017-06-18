@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Workout</title>
+		<title>Feed</title>
 		<meta charset="utf-8">
 		<meta name = "format-detection" content = "telephone=no" />
 		<link rel="icon" href="images/favicon.ico">
@@ -30,7 +30,21 @@
 			<script src="js/html5shiv.js"></script>
 			<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
-	</head>
+<style>
+.button {
+    background-color: #66CDAA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    width:200px;
+    height:20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+</style>	
+</head>
 	<body class="" id="top">
 		<div class="main">
 <!--==============================header=================================-->
@@ -54,7 +68,7 @@
 									<li><a href="index.html">Home</a></li>
 									<li><a href="index-1.html">Login</a></li>
 									<li><a href="index-2.html">Profile</a></li>
-									<li class="current"><a href="index-3.html">Workout</a></li>
+									<li class="current"><a href="index-3.html">Feed</a></li>
 									<li><a href="index-4.html">Contact us</a></li>
 								</ul>
 							</nav>
@@ -70,25 +84,76 @@
 					<div class="grid_4">
 						<h3>Events</h3>
 						<ul class="list1 color1">
-							<li><a href="#">Femus at magna non nunc tristique </a></li>
-							<li><a href="#">Eliquam nibh ante, egestas id dictum </a></li>
-							<li><a href="#">Commodo re luctus liberoraesenterto</a></li>
-							<li><a href="#">Lom faucibusertulomi malesuada </a></li>
-							<li><a href="#">Cibu onec laoreet metus id laoreetert </a></li>
-							<li><a href="#">Malesuadrem ipsum dolor sit er </a></li>
-							<li><a href="#">Kemet,consectetur adipiscing elitllam </a></li>
-							<li><a href="#">Consectetur orci sed wertoli</a></li>
-							<li><a href="#">Curabitur vel lorem sit amet nulla </a></li>
-							<li><a href="#">Ullamcorper fermentun vitae varius </a></li>
+							<script type="text/javascript" src="http://api.eventful.com/js/api">
+
+</script>
+
+<script type="text/javascript">
+
+
+function show_alert2()
+
+{
+var object;
+   var oArgs = {
+
+      app_key: "74Sz8RMZLsVWNhgB",
+                  
+                  location: "Karnataka",
+                  
+                  category: "Health &amp; Wellness",
+                  keywords: "fitness",
+
+      date: "future",
+
+      page_size: 5,
+
+      sort_order: "popularity",
+
+   };
+
+   EVDB.API.call("/events/search", oArgs, function(oData) {
+                                object=oData;
+                                for(var i=0;i<object.events.event.length;i++)
+                                                {console.log(object.events.event[i].url);
+                                                document.getElementById("demo"+i).innerHTML =
+"Event link "+(i+1)+" is:" + object.events.event[i].url;
+            
+                
+                                                
+                                                
+                                                }
+                                                
+                                                
+     
+    });
+                
+}
+
+
+
+</script>
+
+
+
+
+<a onclick="show_alert2()" class="button">Events Near Me</a><br>
+<!--<input class="button";type="button" onclick="show_alert2()" value="Events near me" /> <br>-->
+<p id="demo0"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+
 						</ul>
 						<div class="block3">
 							<h3>Join Us</h3>
-							<em>We treat fitness as a recreational activity rather than a task to be completed. Sweatwell is a platform where you can meet people with similar goals and motivation. After all, what are we if we don't seek company! Stretch, swing, workout and have fun!</em>
+							<em>We treat fitness as a recreational activity rather than a task to be completed. Sweatwell is a platform where you can meet people with similar goals and motivation. After all, what are we if we don't seek company! Stretch, swing, Feed and have fun!</em>
 							<div class="alright"><a href="index-6.html" class="btn">Register</a></div>
 						</div>
 					</div>
 					<div class="grid_8">
-						<h3>Curl Holds</h3>
+						<h3>Curl  Holds</h3>
 						<img src="images/page4_img1.jpg" alt="" class="img_inner fleft">
 						<div class="extra_wrapper">
 							<p class="color1"><a href="#">Stand straight and upright. Hold a dumbbell in each hand with underhand grip.
@@ -129,12 +194,12 @@
 						<a href="index.html">Sweatwell</a>
 					</div>
 					<div class="f_contacts">
-						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> MAIL@DEMOLINK.ORG</a>
+						<a href="#" class="mail_link"><span class="fa fa-envelope"></span> mail@sweatwell.com</a>
 						<div class="f_phone"><span class="fa fa-phone"></span>+1 800 559 6580</div>
 					</div>
 					<div class="copy">
 						<span>Sweatwell &copy; 2014 | <a href="#">Privacy Policy</a> </span>
-						Website designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+						
 					</div>
 				</div>
 				<div class="clear"></div>
